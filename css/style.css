@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+ }
+body{
+    padding-bottom: 2000px;
+    background-color: rgb(230, 230, 230);
+}
+.container{
+    max-width: 1440px;
+    height: 200vh;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    border: 10px solid #fff;
+}
+.box{
+    background: -webkit-linear-gradient(82.65deg, #72E699 0%, #12BFF5 100%);
+    background: -moz-linear-gradient(82.65deg, #72E699 0%, #12BFF5 100%);
+    background: -o-linear-gradient(82.65deg, #72E699 0%, #12BFF5 100%);
+    background: linear-gradient(82.65deg, #72E699 0%, #12BFF5 100%);
+    width: 200px;
+    height: 80px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 200px;
+    border: 4px solid #fff;
+}
+.static{
+
+}
+.relative{
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+.absolute{
+    position: absolute;
+    top: 200px;
+
+}
+.fixed{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.sticky{
+    position: sticky;
+    right: 200px;
+    top: 20%;
+}
+
+/* PRACTICE - start */
+.practice{
+    background-color: #fff;
+}
+.japan{
+    width: 560px;
+    height: 320px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #FF0000;
+}
+.box--red{
+    position: absolute;
+    background-color: #FF0000;
+}
+/* PRACTICE - end */
+
+/* INSTA - start */
+.insta{
+    width: 360px;
+    height: 360px;
+    margin: 150px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.object:nth-of-type(1){
+    width: 360px;
+    height: 360px;
+    background: radial-gradient(147.41% 135.76% at 23.43% 111.41%, #F9ED32 21.6%, #EE2A7B 69.03%, #002AFF 98.44%);
+    border-radius: 83px;
+}
+.object:nth-of-type(2){
+    width: 270px;
+    height: 270px;
+    border: 20px solid #fff;
+    position: absolute;
+    border-radius: 36px;
+}
+.object:nth-of-type(3){
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    border: 20px solid #fff;
+    position: absolute;
+}
+.object:nth-of-type(4){
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 90px;
+    right: 90px;
+}
+/* INSTA - end */
+
+/* KOALA - start */
+h2{
+    font-family: 'Pacifico', cursive;
+    color: #819CAF;
+    font-size: 80px;
+    text-align: center;
+}
+.koala{
+    width: 470px;
+    height: 380px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.face{
+    width: 350px;
+    height: 350px;
+    background-color: #A6BECF;
+    border-radius: 50%;
+    bottom: 0;
+    position: absolute;
+    z-index: 5;
+}
+.eye{
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    z-index: 10;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+}
+.eye--left{
+    left: 145px;
+}
+.eye--right{
+    right: 145px;
+}
+.eyeball{
+    width: 28px;
+    height: 28px;
+    background-color: #263449;
+    z-index: 20;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 21px;
+    left: 16px;
+}
+.nose{
+    width: 63px;
+    height: 102px;
+    background-color: #BE845F;
+    z-index: 30;
+    border-radius: 31px;
+    position: absolute;
+    bottom: 90px;
+}
+.mouth{
+    width: 20px;
+    height: 50px;
+    background-color: #263449;
+    border-radius: 10px;
+    z-index: 15;
+    position: absolute;
+    bottom: 37px;
+}
+.ear{
+    width: 223px;
+    height: 223px;
+    background-color: #819CAF;
+    border: 10px solid #A6BECF;
+    top: 20px;
+    z-index: 1;
+    position: absolute;
+    border-radius: 50%;
+}
+.ear--left{
+    left: 10px; 
+}
+.ear--right{
+    right: 10px;
+}
+.hair{
+    width: 62px;
+    height: 62px;
+    background-color: #A6BECF;
+    clip-path: polygon(52% 0, 0% 100%, 100% 100%);
+    z-index: 100;
+    top: 5px;
+    position: absolute;
+}
+.hair--big{
+    left: 190px;
+}
+.hair--small{
+    left: 220px;
+    top: 15px;
+}
+.koala:hover .eyeball{
+    left: 36px;
+}
+.koala:hover .mouth{
+    width: 50px;
+    height: 20px;
+    bottom: 65px;
+}
+.koala:hover .ear--right{
+    top: 40px;
+    right: 10px;
+}
+/* .koala:hover .eye--right{
+    width: 60px;
+    height: 60px;
+} */
+/* KOALA - end */
